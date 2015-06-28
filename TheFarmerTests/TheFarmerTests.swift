@@ -12,6 +12,9 @@ import XCTest
 
 class TheFarmerTests: XCTestCase {
 
-    
+    func testFarmerCanStoreBeans() {
+        let stinkyThumbsArbuckle = Farmer()
+        XCTAssertEqual(stinkyThumbsArbuckle.beanCount, 0, "Stinky should start with 0 beans.")
+    }
     
 }
