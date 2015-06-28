@@ -12,4 +12,8 @@ struct Farmer {
     mutating func addBeans(beans: Int) {
         beanCount += beans
     }
+    
+    mutating func feedGoats(beans: Int) {
+        beanCount -= beans
+    }
 }
