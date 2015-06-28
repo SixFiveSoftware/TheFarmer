@@ -8,6 +8,7 @@
 
 struct Farmer {
     var beanCount = 0
+    var age = 0
     
     mutating func addBeans(beans: Int) {
         beanCount += beans
@@ -15,5 +16,9 @@ struct Farmer {
     
     mutating func feedGoats(beans: Int) {
         beanCount -= beans
+    }
+    
+    mutating func happyBirthday() {
+        ++age
     }
 }
