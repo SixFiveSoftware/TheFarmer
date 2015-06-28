@@ -19,7 +19,7 @@ class TheFarmerTests: XCTestCase {
     
     func testAddingBeansIncreasesFarmersStore() {
         // given
-        let stinky = Farmer()
+        var stinky = Farmer()
         
         // when
         stinky.addBeans(50)
