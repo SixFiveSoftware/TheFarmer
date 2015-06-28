@@ -13,6 +13,7 @@
 		207129221B3F10260013E008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 207129211B3F10260013E008 /* Assets.xcassets */; };
 		207129251B3F10260013E008 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 207129231B3F10260013E008 /* LaunchScreen.storyboard */; };
 		207129301B3F10260013E008 /* TheFarmerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2071292F1B3F10260013E008 /* TheFarmerTests.swift */; };
+		208FB5801B3F73F40019BA02 /* Farmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208FB57F1B3F73F40019BA02 /* Farmer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		2071292B1B3F10260013E008 /* TheFarmerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheFarmerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2071292F1B3F10260013E008 /* TheFarmerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheFarmerTests.swift; sourceTree = "<group>"; };
 		207129311B3F10260013E008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		208FB57F1B3F73F40019BA02 /* Farmer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Farmer.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		207129191B3F10260013E008 /* TheFarmer */ = {
 			isa = PBXGroup;
 			children = (
+				208FB57F1B3F73F40019BA02 /* Farmer.swift */,
 				2071291A1B3F10260013E008 /* AppDelegate.swift */,
 				2071291C1B3F10260013E008 /* ViewController.swift */,
 				2071291E1B3F10260013E008 /* Main.storyboard */,
@@ -197,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2071291D1B3F10260013E008 /* ViewController.swift in Sources */,
+				208FB5801B3F73F40019BA02 /* Farmer.swift in Sources */,
 				2071291B1B3F10260013E008 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +389,7 @@
 				207129361B3F10260013E008 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		207129371B3F10260013E008 /* Build configuration list for PBXNativeTarget "TheFarmerTests" */ = {
 			isa = XCConfigurationList;
@@ -393,6 +398,7 @@
 				207129391B3F10260013E008 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
