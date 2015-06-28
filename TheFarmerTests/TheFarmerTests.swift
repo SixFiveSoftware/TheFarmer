@@ -27,4 +27,16 @@ class TheFarmerTests: XCTestCase {
         // then
         XCTAssertEqual(stinky.beanCount, 50)
     }
+    
+    func testAddingTwoSetsOfBeansIncreasesFarmersStore() {
+        // given 
+        var stinky = Farmer()
+        
+        // when
+        stinky.addBeans(50)
+        stinky.addBeans(100)
+        
+        // then
+        XCTAssertEqual(stinky.beanCount, 150)
+    }
 }
