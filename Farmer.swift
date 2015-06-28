@@ -10,6 +10,6 @@ struct Farmer {
     var beanCount = 0
     
     mutating func addBeans(beans: Int) {
-        beanCount = beans
+        beanCount += beans
     }
 }
