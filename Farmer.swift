@@ -7,5 +7,5 @@
 //
 
 struct Farmer {
-    var beanCount = 1
+    var beanCount = 0
 }

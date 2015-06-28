@@ -17,4 +17,14 @@ class TheFarmerTests: XCTestCase {
         XCTAssertEqual(stinkyThumbsArbuckle.beanCount, 0, "Stinky should start with 0 beans.")
     }
     
+    func testAddingBeansIncreasesFarmersStore() {
+        // given
+        let stinky = Farmer()
+        
+        // when
+        stinky.addBeans(50)
+        
+        // then
+        XCTAssertEqual(stinky.beanCount, 50)
+    }
 }
