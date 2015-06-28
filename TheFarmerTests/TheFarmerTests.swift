@@ -12,15 +12,19 @@ import XCTest
 
 class TheFarmerTests: XCTestCase {
 
+    var stinky: Farmer!
+    
+    override func setUp() {
+        super.setUp()
+        
+        stinky = Farmer()
+    }
+    
     func testFarmerCanStoreBeans() {
-        let stinkyThumbsArbuckle = Farmer()
-        XCTAssertEqual(stinkyThumbsArbuckle.beanCount, 0, "Stinky should start with 0 beans.")
+        XCTAssertEqual(stinky.beanCount, 0, "Stinky should start with 0 beans.")
     }
     
     func testAddingBeansIncreasesFarmersStore() {
-        // given
-        var stinky = Farmer()
-        
         // when
         stinky.addBeans(50)
         
@@ -29,9 +33,6 @@ class TheFarmerTests: XCTestCase {
     }
     
     func testAddingTwoSetsOfBeansIncreasesFarmersStore() {
-        // given 
-        var stinky = Farmer()
-        
         // when
         stinky.addBeans(50)
         stinky.addBeans(100)
@@ -41,9 +42,6 @@ class TheFarmerTests: XCTestCase {
     }
     
     func testStinkyFeedingBeansToGoatsReducesBeanCoun() {
-        // given
-        var stinky = Farmer()
-        
         // when
         stinky.addBeans(150)
         stinky.feedGoats(50)
